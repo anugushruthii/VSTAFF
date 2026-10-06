@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import {
   APK_URL, APK_META, LINKEDIN, navLinks, steps, deliverables, whyItems,
   journey, partners, stories, faqs, footerCols,
@@ -462,57 +463,326 @@ function FinalCTA() {
   );
 }
 
+function LegalPage({ type, onBack }) {
+  const isPrivacy = type === "privacy";
+
+  return (
+    <section className="legal-page">
+      <div className="wrap legal-container">
+
+        <button className="legal-back" onClick={onBack}>
+          ← Back to VStaff
+        </button>
+
+        <h1>
+          {isPrivacy ? "Privacy Policy" : "Terms & Conditions"}
+        </h1>
+
+        <p className="legal-updated">
+          Last updated: October 6, 2026
+        </p>
+
+        {isPrivacy ? (
+          <>
+            <h2>1. Introduction</h2>
+            <p>
+              VStaff respects your privacy and is committed to protecting
+              your personal information. This Privacy Policy explains how
+              VStaff collects, uses and protects information when you use
+              our website and services.
+            </p>
+
+            <h2>2. Information We Collect</h2>
+            <p>
+              We may collect information such as your name, phone number,
+              email address, location, account details and other information
+              required to provide our services.
+            </p>
+
+            <h2>3. How We Use Your Information</h2>
+            <p>
+              We use collected information to provide and improve our
+              services, communicate with users, process requests and
+              maintain platform security.
+            </p>
+
+            <h2>4. Information Sharing</h2>
+            <p>
+              VStaff may share information when necessary to provide
+              services, comply with applicable laws or protect the rights
+              and safety of users and the platform.
+            </p>
+
+            <h2>5. Data Security</h2>
+            <p>
+              We take reasonable measures to protect personal information
+              from unauthorized access, misuse, alteration or disclosure.
+            </p>
+
+            <h2>6. Contact Us</h2>
+            <p>
+              If you have questions about this Privacy Policy, please
+              contact VStaff Support.
+            </p>
+
+            <p>
+              Email: hr@vstaffcore.com
+              <br />
+              Email: srp.vstaff@gmail.com
+              <br />
+              Phone: +91 9652910585
+            </p>
+          </>
+        ) : (
+          <>
+            <h2>1. Acceptance of Terms</h2>
+            <p>
+              By accessing the VStaff website or using VStaff services,
+              you agree to these Terms & Conditions and our Privacy Policy.
+            </p>
+
+            <h2>2. About VStaff</h2>
+            <p>
+              VStaff is a technology platform that connects customers with
+              delivery partners and delivery opportunities. VStaff provides
+              the platform, while delivery partners operate independently
+              unless otherwise agreed in writing.
+            </p>
+
+            <h2>3. Eligibility and Accounts</h2>
+            <p>
+              Users must be at least 18 years old and legally capable of
+              entering into an agreement under applicable Indian law.
+              Users must provide accurate information and keep their
+              account information secure.
+            </p>
+
+            <h2>4. Using Our Services</h2>
+            <p>
+              Customers must provide correct pickup, delivery and contact
+              information. Delivery partners must follow applicable traffic,
+              safety and legal requirements.
+            </p>
+
+            <h2>5. Prohibited Items and Activities</h2>
+            <p>
+              Users must not use VStaff services for illegal goods,
+              hazardous materials, restricted items or any unlawful
+              activity.
+            </p>
+
+            <h2>6. Fees and Payments</h2>
+            <p>
+              Applicable charges, commissions and payouts will be displayed
+              in the application or agreed upon in writing. Taxes may apply
+              where required by law.
+            </p>
+
+            <h2>7. Cancellations and Refunds</h2>
+            <p>
+              Cancellation charges may apply depending on the circumstances.
+              Where a refund is due, it may be processed to the original
+              payment method within a reasonable period.
+            </p>
+
+            <h2>8. Prohibited Conduct</h2>
+            <p>
+              Users must not engage in fraud, impersonation, harassment,
+              false information, interference with the platform or any
+              unlawful activity.
+            </p>
+
+            <h2>9. Intellectual Property</h2>
+            <p>
+              The VStaff name, logo, software, content and other materials
+              belong to VStaff or its licensors and may not be copied,
+              modified or reused without written permission.
+            </p>
+
+            <h2>10. Disclaimer and Limitation of Liability</h2>
+            <p>
+              Services are provided on an "as is" and "as available" basis.
+              To the extent permitted by law, VStaff is not responsible for
+              indirect or consequential losses arising from the use of its
+              services.
+            </p>
+
+            <h2>11. Suspension and Termination</h2>
+            <p>
+              VStaff may suspend or terminate access where a user violates
+              these Terms or misuses the platform.
+            </p>
+
+            <h2>12. Governing Law</h2>
+            <p>
+              These Terms are governed by the laws of India. Courts in
+              Hyderabad, Telangana shall have jurisdiction.
+            </p>
+
+            <h2>13. Changes to These Terms</h2>
+            <p>
+              VStaff may update these Terms from time to time. Continued
+              use of the platform after changes are posted means acceptance
+              of the updated Terms.
+            </p>
+
+            <h2>14. Contact Us</h2>
+            <p>
+              VStaff Support
+              <br />
+              Email: hr@vstaffcore.com
+              <br />
+              Email: srp.vstaff@gmail.com
+              <br />
+              Phone: +91 9652910585
+              <br />
+              Address: Punjagutta, Hyderabad 500082
+            </p>
+          </>
+        )}
+
+      </div>
+    </section>
+  );
+}
+
 function Footer() {
   return (
     <footer id="contact" className="footer">
       <div className="wrap">
-        <div className="foot-top">
+
+        <div className="footer-grid">
+
+          {/* VStaff Brand */}
           <div className="foot-brand">
-            <a href="#home" className="brand light"><img src="/favicon.png" alt="" width="40" height="40" /><span>VSTAFF</span></a>
+            <a href="#home" className="brand light">
+              <img
+                src="/favicon.png"
+                alt="VStaff"
+                width="40"
+                height="40"
+              />
+              <span>VSTAFF</span>
+            </a>
+
             <p>Built to Earn.</p>
-            {/* <a href={LINKEDIN} target="_blank" rel="noreferrer">Contact us on LinkedIn</a> */}
           </div>
-          {footerCols.map((c) => (
-            <div key={c.title}>
-              <h4>{c.title}</h4>
-              <ul>
-                {c.links.map(([label, href]) => (
-                  <li key={label}>
-                    <a href={href} {...(href.startsWith("http") ? { target: "_blank", rel: "noreferrer" } : {})} {...(href === APK_URL ? { download: true } : {})}>{label}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+
+          {/* Footer Links */}
+          <div className="foot-links">
+            {footerCols.map((c) => (
+              <div key={c.title} className="foot-column">
+                <h4>{c.title}</h4>
+
+                <ul>
+                  {c.links.map(([label, href]) => (
+                    <li key={label}><a
+                        href={href}
+                        onClick={(e) => {
+                          if (href === "#privacy") {
+                            e.preventDefault();
+                            onLegalClick("privacy");
+                          }
+                      
+                          if (href === "#terms") {
+                            e.preventDefault();
+                            onLegalClick("terms");
+                          }
+                        }}
+                        {...(
+                          href.startsWith("http")
+                            ? {
+                                target: "_blank",
+                                rel: "noreferrer"
+                              }
+                            : {}
+                        )}
+                        {...(
+                          href === APK_URL
+                            ? { download: true }
+                            : {}
+                        )}
+                      >
+                        {label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
         </div>
-        <p className="copy">© {new Date().getFullYear()} VStaff. All rights reserved.</p>
+
+        <p className="copy">
+          © {new Date().getFullYear()} VStaff. All rights reserved.
+        </p>
+
       </div>
     </footer>
   );
 }
 
-/* ---------- app ---------- */
 
+
+/* ---------- app ---------- */
 export default function App() {
   return (
-    <>
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        {/* <HowItWorks /> */}
-        {/* <Why /> */}
-        {/* <Journey /> */}
-        <Deliver />
-        <AppSection />
-        {/* <Network /> */}
-        <Partners />
-        {/* <VisionMission /> */}
-        {/* <Stories /> */}
-        {/* <FAQ /> */}
-        <FinalCTA />
-      </main>
-      <Footer />
-    </>
+    <Routes>
+      
+      {/* Main Website */}
+      <Route
+        path="/"
+        element={
+          <>
+            <Navbar />
+
+            <main>
+              <Hero />
+              <About />
+              {/* <HowItWorks /> */}
+              {/* <Why /> */}
+              {/* <Journey /> */}
+              <Deliver />
+              <AppSection />
+              {/* <Network /> */}
+              <Partners />
+              {/* <VisionMission /> */}
+              {/* <Stories /> */}
+              {/* <FAQ /> */}
+              <FinalCTA />
+            </main>
+
+            <Footer />
+          </>
+        }
+      />
+
+      {/* Privacy Policy */}
+      <Route
+        path="/privacy"
+        element={
+          <>
+            <Navbar />
+            <LegalPage type="privacy" />
+            <Footer />
+          </>
+        }
+      />
+
+      {/* Terms & Conditions */}
+      <Route
+        path="/terms"
+        element={
+          <>
+            <Navbar />
+            <LegalPage type="terms" />
+            <Footer />
+          </>
+        }
+      />
+
+    </Routes>
   );
 }
+

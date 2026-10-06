@@ -86,7 +86,7 @@ export const faqs = [
 export const footerCols = [
   { title: "Quick links", links: [["Home", "#home"], ["About Us", "#about"],["VStaff App", "#app"]] },
   { title: "Delivery partners", links: [["Join VStaff", "#join"], ["Download App", APK_URL]] },
-  // { title: "Legal", links: [["Privacy Policy", "#"], ["Terms & Conditions", "#"], ["Rider Terms", "#"]] },
+  { title: "Legal", links: [ ["Privacy Policy", "/privacy"],["Terms & Conditions", "/terms"]] },
   {
     title: "Contact Us",
     links: [
