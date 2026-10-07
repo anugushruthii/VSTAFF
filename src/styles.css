@@ -290,7 +290,7 @@ p { margin: 0 0 1em; }
 .legal-page {
   min-height: 100vh;
   background: #f7f8fc;
-  padding: 130px 20px 80px;
+  padding: 130px 0px 80px;
 }
 
 .legal-container {

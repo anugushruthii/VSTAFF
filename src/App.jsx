@@ -519,18 +519,30 @@ function LegalPage({ type, onBack }) {
               from unauthorized access, misuse, alteration or disclosure.
             </p>
 
-            <h2>6. Contact Us</h2>
-            <p>
-              If you have questions about this Privacy Policy, please
-              contact VStaff Support.
-            </p>
+            <h2>6. Contact for Policy Questions</h2>
 
+            <h4>LOCATION TRACKING</h4>
+            
             <p>
-              Email: hr@vstaffcore.com
-              <br />
-              Email: srp.vstaff@gmail.com
-              <br />
-              Phone: +91 9652910585
+              Delivery partners and users who enable location services expressly
+              consent to:
+            </p> 
+            <ul>
+              <li>Continuous location tracking</li>
+              <li>Background location access</li>
+              <li>Route optimization</li>
+              <li>Attendance verification</li>
+              <li>Fraud prevention</li>
+              <li>Safety monitoring</li>
+              <li>Performance measurement</li>
+            </ul>
+            <p>
+              Location data may continue to be retained after completion of
+              services for operational, legal, and analytical purposes.
+            </p>
+            <p>
+              For privacy, compliance, billing, or terms-related questions,
+              contact <strong>business@peakliftel.com</strong>.
             </p>
           </>
         ) : (
