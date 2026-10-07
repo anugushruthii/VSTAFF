@@ -470,9 +470,9 @@ function LegalPage({ type, onBack }) {
     <section className="legal-page">
       <div className="wrap legal-container">
 
-        <button className="legal-back" onClick={onBack}>
+        {/* <button className="legal-back" onClick={onBack}>
           ← Back to VStaff
-        </button>
+        </button> */}
 
         <h1>
           {isPrivacy ? "Privacy Policy" : "Terms & Conditions"}
