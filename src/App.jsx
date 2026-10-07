@@ -485,41 +485,49 @@ function LegalPage({ type, onBack }) {
         {isPrivacy ? (
           <>
             <h2>1. Introduction</h2>
-            <p>
-              VStaff respects your privacy and is committed to protecting
-              your personal information. This Privacy Policy explains how
-              VStaff collects, uses and protects information when you use
-              our website and services.
-            </p>
-
-            <h2>2. Information We Collect</h2>
-            <p>
-              We may collect information such as your name, phone number,
-              email address, location, account details and other information
-              required to provide our services.
-            </p>
-
-            <h2>3. How We Use Your Information</h2>
-            <p>
-              We use collected information to provide and improve our
-              services, communicate with users, process requests and
-              maintain platform security.
-            </p>
-
-            <h2>4. Information Sharing</h2>
-            <p>
-              VStaff may share information when necessary to provide
-              services, comply with applicable laws or protect the rights
-              and safety of users and the platform.
-            </p>
-
-            <h2>5. Data Security</h2>
-            <p>
-              We take reasonable measures to protect personal information
-              from unauthorized access, misuse, alteration or disclosure.
-            </p>
-
-            <h2>6. Contact for Policy Questions</h2>
+            <p>VStaff (&ldquo;VStaff&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) operates vstaffcore.com and a technology-driven delivery platform that connects customers with delivery partners. This Privacy Policy explains what personal information we collect, how we use and protect it, and the choices you have. By using our website or services, you agree to this policy.</p>
+            <h2>2. Information we collect</h2>
+            <ul>
+                <li><strong>Contact details:</strong> name, phone number, email address, and delivery or business address.</li>
+                <li><strong>Account and verification details:</strong> for delivery partners, identity and onboarding documents needed to verify eligibility.</li>
+                <li><strong>Order and delivery details:</strong> pickup and drop-off locations, order notes, delivery status, and service history.</li>
+                <li><strong>Location data:</strong> device location while you use our services, to match, route, and track deliveries.</li>
+                <li><strong>Payment details:</strong> transaction records and payout information. Card or bank credentials are handled by our payment providers.</li>
+                <li><strong>Technical data:</strong> IP address, browser and device type, pages visited, and cookie data.</li><li><strong>Communications:</strong> messages, enquiries, and feedback you send us.</li>
+            </ul>
+            <h2>3. How we use your information</h2>
+            <ul>
+                <li>To provide, match, and complete delivery and workspace services.</li>
+                <li>To create and manage your account and verify delivery partners.</li>
+                <li>To process payments, payouts, and invoices.</li>
+                <li>To send service updates, support replies, and, where permitted, offers you can opt out of.</li>
+                <li>To improve our website, services, and safety, and to prevent fraud and misuse.</li>
+                <li>To comply with legal obligations.</li>
+            </ul>
+              <h2>4. Sharing your information</h2>
+              <p>We do not sell your personal information. We share it only with:</p>
+              <ul>
+                  <li>Delivery partners and customers, as needed to complete an order.</li>
+                  <li>Service providers such as payment gateways, mapping, hosting, analytics, and communication tools, who act on our instructions.</li>
+                  <li>Authorities or other parties when required by law, or to protect rights, safety, and property.</li>
+                  <li>A successor entity if VStaff is involved in a merger, acquisition, or sale of assets.</li>
+              </ul>
+              <h2>5. Cookies and tracking</h2>
+              <p>We use cookies and similar technologies to keep the site working, remember preferences, and understand usage. You can block or delete cookies in your browser settings, though some features may stop working.</p>
+              <h2>6. Data retention</h2>
+              <p>We keep personal information only as long as needed for the purposes above, or as required by law, tax, and accounting rules. When it is no longer needed, we delete or anonymise it.</p>
+              <h2>7. Data security</h2>
+              <p>We use reasonable technical and organisational safeguards to protect your information. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
+              <h2>8. Your rights</h2>
+              <p>Subject to applicable Indian law, including the Digital Personal Data Protection Act, 2023, you may request to access, correct, update, or delete your personal information, withdraw consent, and opt out of marketing messages. Contact us using the details below and we will respond within a reasonable time.</p>
+              <h2>9. Third-party links</h2>
+              <p>Our site may link to other websites. We are not responsible for their privacy practices, so please review their policies.</p>
+              <h2>10. Children&rsquo;s privacy</h2>
+              <p>Our services are not directed to anyone under 18. We do not knowingly collect information from children. If you believe a child has given us data, contact us and we will remove it.</p>
+              <h2>11. Changes to this policy</h2>
+              <p>We may update this policy from time to time. The &ldquo;Last updated&rdquo; date shows the latest version. Continued use of our services after changes means you accept them.</p>
+          
+            <h2> Contact for Policy Questions</h2>
 
             <h4>LOCATION TRACKING</h4>
             
@@ -547,108 +555,68 @@ function LegalPage({ type, onBack }) {
           </>
         ) : (
           <>
-            <h2>1. Acceptance of Terms</h2>
-            <p>
-              By accessing the VStaff website or using VStaff services,
-              you agree to these Terms & Conditions and our Privacy Policy.
-            </p>
-
+            <h2>1. Acceptance of terms</h2>
+            <p>By accessing vstaffcore.com or using VStaff services, you agree to these Terms &amp; Conditions and our Privacy Policy. If you do not agree, please do not use our services.</p>
             <h2>2. About VStaff</h2>
-            <p>
-              VStaff is a technology platform that connects customers with
-              delivery partners and delivery opportunities. VStaff provides
-              the platform, while delivery partners operate independently
-              unless otherwise agreed in writing.
-            </p>
+            <p>VStaff is a technology platform that connects customers with delivery partners and delivery opportunities. VStaff provides the platform; delivery partners are independent and are not employees of VStaff unless agreed in a separate written contract.</p>
+            <h2>3. Eligibility and accounts</h2>
+            <ul>
+              <li>You must be at least 18 and legally able to enter a contract in India.</li>
+              <li>You must give accurate, current information and keep your login details secure.</li>
+              <li>You are responsible for all activity under your account.</li>
+            </ul>
+              <h2>4. Using our services</h2>
+            <ul>
+                <li>Customers must provide correct pickup, drop-off, and contact details, and only send lawful, permitted items.</li>
+                <li>Delivery partners must hold valid documents, follow traffic and safety laws, and handle orders with care.</li>
+                <li>Prohibited items include illegal goods, hazardous materials, and anything restricted by law.</li>
+            </ul>
+                <h2>5. Fees and payments</h2>
+                <p>Charges, commissions, and payouts are shown in the app or agreed in writing. Taxes apply as per law. Payments are processed by third-party providers, and VStaff is not liable for their delays or failures.</p>
+                <h2>6. Cancellations and refunds</h2>
+                <p>Orders may be cancelled before a delivery partner starts the job. Cancellation charges may apply afterwards. Refunds, where due, are processed to the original payment method within a reasonable time.</p>
+                <h2>7. Prohibited conduct</h2>
+            <ul>
+                  <li>Fraud, impersonation, or giving false information.</li>
+                  <li>Harassing or endangering customers, partners, or our staff.</li>
+                  <li>Interfering with, copying, or reverse-engineering the platform.</li>
+                  <li>Using the service for any unlawful purpose.</li>
+            </ul>
+                  <h2>8. Intellectual property</h2>
+                  <p>The VStaff name, logo, website content, and software belong to VStaff or its licensors. You may not copy, modify, or reuse them without written permission.</p>
+                  <h2>9. Disclaimer and limitation of liability</h2>
+                  <p>Services are provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo;. To the extent permitted by law, VStaff is not liable for indirect or consequential losses, delays beyond our control, or loss or damage to items caused by third parties. Our total liability for any claim is limited to the amount you paid for the affected service.</p>
+                  <h2>10. Suspension and termination</h2>
+                  <p>We may suspend or end access to our services if you breach these terms or misuse the platform. You may stop using the services at any time.</p>
+                  <h2>11. Governing law</h2>
+                  <p>These terms are governed by the laws of India. Courts in Hyderabad, Telangana have exclusive jurisdiction over any dispute.</p>
+                  <h2>12. Changes to these terms</h2>
+                  <p>We may revise these terms at any time. The updated version applies once posted on this page, and continued use means you accept it.</p>
 
-            <h2>3. Eligibility and Accounts</h2>
-            <p>
-              Users must be at least 18 years old and legally capable of
-              entering into an agreement under applicable Indian law.
-              Users must provide accurate information and keep their
-              account information secure.
-            </p>
+                  <h2> Contact for Policy Questions</h2>
 
-            <h2>4. Using Our Services</h2>
+            <h4>LOCATION TRACKING</h4>
+            
             <p>
-              Customers must provide correct pickup, delivery and contact
-              information. Delivery partners must follow applicable traffic,
-              safety and legal requirements.
+              Delivery partners and users who enable location services expressly
+              consent to:
+            </p> 
+            <ul>
+              <li>Continuous location tracking</li>
+              <li>Background location access</li>
+              <li>Route optimization</li>
+              <li>Attendance verification</li>
+              <li>Fraud prevention</li>
+              <li>Safety monitoring</li>
+              <li>Performance measurement</li>
+            </ul>
+            <p>
+              Location data may continue to be retained after completion of
+              services for operational, legal, and analytical purposes.
             </p>
-
-            <h2>5. Prohibited Items and Activities</h2>
             <p>
-              Users must not use VStaff services for illegal goods,
-              hazardous materials, restricted items or any unlawful
-              activity.
-            </p>
-
-            <h2>6. Fees and Payments</h2>
-            <p>
-              Applicable charges, commissions and payouts will be displayed
-              in the application or agreed upon in writing. Taxes may apply
-              where required by law.
-            </p>
-
-            <h2>7. Cancellations and Refunds</h2>
-            <p>
-              Cancellation charges may apply depending on the circumstances.
-              Where a refund is due, it may be processed to the original
-              payment method within a reasonable period.
-            </p>
-
-            <h2>8. Prohibited Conduct</h2>
-            <p>
-              Users must not engage in fraud, impersonation, harassment,
-              false information, interference with the platform or any
-              unlawful activity.
-            </p>
-
-            <h2>9. Intellectual Property</h2>
-            <p>
-              The VStaff name, logo, software, content and other materials
-              belong to VStaff or its licensors and may not be copied,
-              modified or reused without written permission.
-            </p>
-
-            <h2>10. Disclaimer and Limitation of Liability</h2>
-            <p>
-              Services are provided on an "as is" and "as available" basis.
-              To the extent permitted by law, VStaff is not responsible for
-              indirect or consequential losses arising from the use of its
-              services.
-            </p>
-
-            <h2>11. Suspension and Termination</h2>
-            <p>
-              VStaff may suspend or terminate access where a user violates
-              these Terms or misuses the platform.
-            </p>
-
-            <h2>12. Governing Law</h2>
-            <p>
-              These Terms are governed by the laws of India. Courts in
-              Hyderabad, Telangana shall have jurisdiction.
-            </p>
-
-            <h2>13. Changes to These Terms</h2>
-            <p>
-              VStaff may update these Terms from time to time. Continued
-              use of the platform after changes are posted means acceptance
-              of the updated Terms.
-            </p>
-
-            <h2>14. Contact Us</h2>
-            <p>
-              VStaff Support
-              <br />
-              Email: hr@vstaffcore.com
-              <br />
-              Email: srp.vstaff@gmail.com
-              <br />
-              Phone: +91 9652910585
-              <br />
-              Address: Punjagutta, Hyderabad 500082
+              For privacy, compliance, billing, or terms-related questions,
+              contact <strong>business@peakliftel.com</strong>.
             </p>
           </>
         )}
